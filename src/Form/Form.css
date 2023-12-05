@@ -1,0 +1,27 @@
+.form-todo input {
+    font-size: 36px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 490px;
+}
+
+.form-todo button {
+    font-size: 35px;
+    margin-left:10px;
+    border-radius: 8px;
+    background-color: blue;
+}
+
+.li {
+    list-style: none;
+}
+
+.ul {
+    list-style: none;
+}
+.coding-index{
+    /* margin-right: 230px; */
+}
+.todoList button{
+    /* margin-left: 525px; */
+}

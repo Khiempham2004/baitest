@@ -1,0 +1,22 @@
+.completeDta{
+    font-size: 30px;
+    margin-left: 490px;
+    margin-top: 30px;
+}
+
+.icon{
+    margin-left: 530px;
+}
+.completeAll{
+    margin-left: 1000px;
+    margin-top: 20px;
+}
+.completeAll{
+    font-size: 30px;
+}
+.completeTask .completeAll{
+    margin-left: 920px;
+    margin-top: 40px;
+    background-color: red;
+    border-radius: 8px;
+}
