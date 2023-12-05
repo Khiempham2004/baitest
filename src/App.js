@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import TodoList from './TodoList/TodoList'
 import Form from './Form/Form';
@@ -11,19 +10,19 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/all' element={<>
-        <TodoList/>
-        <Form/>
-        <TodoListHeader/>
-        </>}/>
+          <TodoList />
+          <Form />
+          <TodoListHeader />
+        </>} />
         <Route exact path='/active' element={<>
-          <TodoList/>
-          <Form/>
-          <Datalist/>
-        </>}/>
+          <TodoList />
+          <Form />
+          <Datalist />
+        </>} />
         <Route exact path='/complete' element={<>
-          <TodoList/>
-          <CompleteData/>
-        </>}/>
+          <TodoList />
+          <CompleteData />
+        </>} />
       </Routes>
     </BrowserRouter>
   );

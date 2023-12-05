@@ -9,25 +9,13 @@ function CompleteData() {
         { id: 2, text: <strike>Task done</strike>, completed: true },
         { id: 3, text: <strike>Task done</strike>, completed: true },
     ])
-    // const [tasks, setTask] = useState('')
-    const [dataPlete, setDataPlete] = useState('')
-    // const handleChange = (id) => {
-    //     const updatedTasks = tasks.map((tasks) => {
-    //         if (tasks.id === id) {
-    //             return { ...tasks, completed: !tasks.completed};
-    //         }
-    //         return tasks;
-    //     });
-    //     setTask(updatedTasks);
-    // };
-    const handleFilterChange = (deleteComplete) => {
-        const handldFilter = dataPlete.filter((detail, i) => i !== deleteComplete)
-        setDataPlete(handldFilter);
-    };
     const handleDeleteAll = (completeId) => {
         const updatedCompleteTasks = complete.filter(item => item.id !== completeId)
         setComplete(updatedCompleteTasks);
     };
+    const deleteAll = () => {
+        setComplete([deleteAll]);
+      };
 
     return (
         <div className="completeTask">
@@ -41,9 +29,9 @@ function CompleteData() {
                         id={`Docodingchallenges${task.id}`}
                         label={task.text}
                         checked={task.completed}
-                        onChange={() => handleDeleteAll(item.id)}
+                        onChange={() => deleteAll(item.id)}
                     />
-                    <button className=" icon">
+                    <button className=" icon" onClick={() =>deleteAll(item.id)}>
                         <DeleteOutlinedIcon
                             className="deleteIcon"
                             onChange={() => handleDeleteAll(item.id)}
